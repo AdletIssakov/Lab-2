@@ -1,0 +1,105 @@
+
+
+# 1 решение   Не понял
+
+a , b = map(int, input().split())
+for i in range(a, b + 1):
+
+   if i % 2 == 0:
+
+       print(i, end=' ')
+
+
+# 2 решение
+
+
+
+n = int(input())
+i = 1
+while i <= n:
+    i = i + 1
+    if n % i == 0:
+        print(i)
+        break
+
+# 3 решение  / да
+
+
+a = int(input("Min: "))
+b = int(input("Max: "))
+n = int(input("Min pieces of details: "))
+while a <= b:
+    m = 0
+    for i in range(1,a+1):
+        if a%i == 0:
+            m += 1
+    if m >= n:
+        print(a,'-',m,end=' - ')
+        for i in range(1,a+1):
+            if a%i == 0:
+                print(i,end=' ')
+        print()
+    a += 1
+
+# 4 решение 
+
+n = int(input())
+
+suma = 0
+mult = 1
+
+while n > 0:
+    digit = n % 10
+    suma = suma + digit
+    mult = mult * digit
+    n = n // 10
+
+print(mult)
+print(suma)
+
+# 5 решение
+
+a = [[int(i) for i in input()], []]
+for i in range(len(a[0]) - 1, -1, -1):
+    a[1].append(2 ** i)
+for i in range(len(a) + 1):
+    if a[0][i] == 0:
+        a[1][i] = 0
+    else:
+        a[1][i] = a[1][i] * 1
+print(sum(a[1]))
+
+# 6 решение
+
+a = map(int, input().split())
+b = map(int, input().split())
+for i in range (a, b + 1):
+
+   if i % 2 == 0:
+
+       print(i, end=' ')
+
+
+# 7 решение
+
+def election(x,y,z):
+
+   count = 0
+
+   for i in x,y,z:
+
+       if i == 1:
+
+           count += 1
+
+   if count > 1:
+
+       return 1
+
+   else:
+
+       return 0
+
+a = election(1,1,0)
+
+print(a,"("+str(a)+","+str(a)+","+str(a)+")")
