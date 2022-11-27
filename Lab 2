@@ -1,6 +1,6 @@
 
 
-# 1 решение   Не понял
+# 1 решение 
 
 a , b = map(int, input().split())
 for i in range(a, b + 1):
@@ -22,7 +22,7 @@ while i <= n:
         print(i)
         break
 
-# 3 решение  / да
+# 3 решение
 
 
 a = int(input("Min: "))
@@ -103,3 +103,6 @@ def election(x,y,z):
 a = election(1,1,0)
 
 print(a,"("+str(a)+","+str(a)+","+str(a)+")")
+
+# 8 решение / не смог сделать
+
